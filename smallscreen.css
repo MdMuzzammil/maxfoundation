@@ -1,0 +1,42 @@
+@media screen and (max-width:768px ){
+    .why-us-container{
+        flex-direction: column;
+    }
+    .for-student-container{
+        flex-direction: column;
+    }
+    .achievement{
+        flex-direction: column;
+    }
+    #android-app>div{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    footer h4{
+        margin: 1rem;
+    }
+    footer h3{
+        margin-bottom: 1rem;
+    }
+    .connect-us h3{
+        margin: 1rem;
+    }
+    #copyright{
+        flex-direction: column;
+    }
+    .achieve{
+        padding: 1.5rem 0;
+    }
+    .why-us-reason{
+        padding: 1.5rem 0;
+    }
+    #enquiry-form{
+        min-width: 24rem;
+    }
+}

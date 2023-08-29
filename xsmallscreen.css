@@ -1,0 +1,25 @@
+@media (min-width: 320px){
+    .app-download-buttons{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .app-download-buttons img{
+        transform: translateX(10px);
+    }
+    .app-download-buttons button{
+        width: 12.3rem ;
+    }
+    #enquiry-form input{
+        min-width: 17rem;
+    }
+    #enquiry-form{
+        min-width: 18rem;
+    }
+    #enquiry-form select{
+        min-width: 18rem;
+    }
+    .for-student-container>div{
+        width: 40%;
+        margin: 1rem .5rem;
+    }
+}
