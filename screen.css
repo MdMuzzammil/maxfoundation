@@ -1,26 +1,7 @@
 
-@media screen and (max-width:768 ){
-    .why-us-container{
-        flex-direction: column;
-    }
-    .for-student-container{
-        flex-direction: column;
-    }
-    .achievement{
-        flex-direction: column;
-    }
-    #android-app>div{
-        flex-direction: column;
-    }
-    .footer{
-        flex-direction: column;
-    }
-    #copyright{
-        flex-direction: column;
-    }
-}
 @media screen and (min-width:769px) {
     .achieve{
         min-width: 12rem;
     }
+    
 }

@@ -9,10 +9,22 @@
       href="https://fonts.googleapis.com/css2?family=Redressed&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./screen.css" />
     <link rel="stylesheet" href="./smallscreen.css" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./screen.css" />
     <link rel="stylesheet" href="./xsmallscreen.css" />
+    <style>
+        @media screen and (max-width: 768px) {
+            .bar{
+                display: block;
+            }           
+        }
+        @media (min-width: 769px){
+            .mobile-logo{
+                display: none;
+            }
+        }
+    </style>
     <title>Max Foundation Ranchi</title>
   </head>
   <body>
@@ -24,14 +36,22 @@
     </div>
     <nav class="nav-bar shift">
       <div class="header-logo">
-        <img src="./images/logo.png" alt="" />
-      </div>
+          <img src="./images/logo.png" alt="" />
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <!-- <ion-icon name="menu-outline" color="white" size="larger">Menu</ion-icon>
+                <ion-icon name="menu-outline" color="white" size="larger"></ion-icon> -->
+            </div>
+            <img class="mobile-logo" src="./images/logo.png" alt="" />
       <ul class="nav-list">
         <li class="list-item"><a href=""><ion-icon name="home-outline" color="#26116e"></ion-icon>Home</a></li>
         <li class="list-item"><a href=""><ion-icon name="school-outline"></ion-icon>Courses</a></li>
         <li class="list-item"><a href=""><ion-icon name="image-outline"></ion-icon>Gallery</a></li>
         <li class="list-item"><a href=""><ion-icon name="people-outline"></ion-icon>About Us</a></li>
-        <li class="list-item"><a href=""><ion-icon name="image-outline"></ion-icon>Contact Us</a></li>
+        <li class="list-item"><a href=""><ion-icon name="chatbubbles-outline"></ion-icon>Contact Us</a></li>
       </ul>
     </nav>
 

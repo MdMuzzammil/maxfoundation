@@ -39,4 +39,38 @@
     #enquiry-form{
         min-width: 24rem;
     }
+    .nav-list{
+        flex-direction: column;
+    }
+    .header-logo{
+        display: none;
+    }
+    .list-item a{
+        font-size: 1.5rem;
+    }
+    .list-item{
+        padding: .5rem;
+        /* display: none; */
+        display: none;
+
+    }
+    .nav-bar{
+        justify-content: start;
+        min-height: 3.5rem;
+    }
+    .hamburger{
+        position: absolute;
+        right: 1.2rem;
+        top: .75rem;
+    }
+    .mobile-logo{
+        position: absolute;
+        height: 3rem;
+        left: 1rem;
+        
+    }
+    .bar{
+        display: block;
+    }
+  
 }

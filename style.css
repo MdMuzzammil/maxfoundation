@@ -20,6 +20,8 @@ body{
     background-color:#ffffff;
     display: flex;
     justify-content: space-around;
+    position: sticky;
+    top: 0;
 }
 .nav-list{
     display: flex;
@@ -633,4 +635,14 @@ footer>div{
 .app-download-buttons{
     display: flex;
     margin: 1rem;
+}
+.bar {
+    display: none;
+    color: white;
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(7, 13, 26);
+    margin: 5px auto;
 }
