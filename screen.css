@@ -5,3 +5,14 @@
     }
     
 }
+@media (min-width: 769px){
+    .mobile-logo{
+        display: none !important; 
+    }
+    .list-item{
+        display: flex !important;
+    }
+    .bar{
+        display: none !important;
+    }
+}

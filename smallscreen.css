@@ -70,7 +70,12 @@
         
     }
     .bar{
-        display: block;
+        display: block !important;
     }
   
+}
+@media (min-width: 769px){
+    .mobile-logo{
+        display: none;
+    }
 }

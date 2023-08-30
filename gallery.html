@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Redressed&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./screen.css" />
+    <link rel="stylesheet" href="./smallscreen.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./xsmallscreen.css" />
+    <style>
+        @media screen and (max-width: 768px) {
+            .bar{
+                display: block;
+            }           
+        }
+        @media (min-width: 769px){
+            .mobile-logo{
+                display: none;
+            }
+        }
+    </style>
+    <title>Max Foundation Ranchi</title>
+  </head>
+  <body>
+    <div class="top-header">
+      <ion-icon name="call"></ion-icon>
+      Call Us
+      <a href="tel:+919334183225"> 9334183225 </a>
+      <a href="tel:+918210511638"> 8210511638 </a>
+    </div>
+    <nav class="nav-bar shift">
+      <div class="header-logo">
+          <img src="./images/logo.png" alt="" />
+        </div>
+        <div class="hamburger hamburger-g">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            
+            </div>
+            <img class="mobile-logo mobile-logo-g" style="@media (min-width: 769px){display:none}" src="./images/logo.png" alt="" />
+      <ul class="nav-list">
+        <li class="list-item list-item-g"><a href="./index.html"><ion-icon name="home-outline" color="#26116e"></ion-icon>Home</a></li>
+        <li class="list-item list-item-g"><a href="./index.html#courses"><ion-icon name="school-outline"></ion-icon>Courses</a></li>
+        <li class="list-item list-item-g"><a href="./gallery.html"><ion-icon name="image-outline"></ion-icon>Gallery</a></li>
+        <li class="list-item list-item-g"><a href="./index#about-us"><ion-icon name="people-outline"></ion-icon>About Us</a></li>
+        <li class="list-item list-item-g"><a href="./index.html#contact-us"><ion-icon name="chatbubbles-outline"></ion-icon>Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div onclick="toggleCall()" class="call-btn">
+        <ion-icon name="caret-back" class="hide-call" style="color: #ffffff;"></ion-icon>
+        <ion-icon name="caret-forward" class="show-call" style="color: #ffffff;"></ion-icon>
+        <ion-icon name="call"  style="color: #ffffff;"></ion-icon><a href="tel:+918210511638">Call Now</a>
+    </div>
+
+    <section>
+     
+    </section>
+    
+
+
+    <footer>
+        <div class="location">
+          <h3>Location</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.6413595252893!2d85.3412291762656!3d23.36500440346079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e2d85de38279%3A0xb0cbedfbff17d288!2sMax%20Foundation!5e0!3m2!1sen!2sin!4v1692348967718!5m2!1sen!2sin"
+            width="250"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="address">
+          <h3 class="footer-heading">Address</h3>
+          <h4>Branch I</h4>
+          <p>1st floor, Bhatia Complex, Near Aditya Vision, Dangratoli, Ranchi</p>
+          <h4>Branch II</h4>
+          <p>
+            1st floor, B.S. Bhavan, Near Anjali Hotel, Purulia Road, Kantatoli,
+            Ranchi
+          </p>
+        </div>
+        <div class="quick-nav">
+          <ul class="quick-nav-list">
+            <h3>Quick Navigation</h3>
+            <li class="quick-list-item"><a href="">Home</a></li>
+            <li class="quick-list-item"><a href="">Courses</a></li>
+            <li class="quick-list-item"><a href="">Gallery</a></li>
+            <li class="quick-list-item"><a href="">About Us</a></li>
+            <li class="quick-list-item"><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div id="contact-us" class="connect-us">
+          <h3>Contact Us</h3>
+          <a href="tel:+919334183225"> 9334183225<br /> </a>
+          <a href="tel:+918210511638"> 8210511638 </a>
+          <h3>Connect With Us</h3>
+          <div class="social-icons">
+            <a
+              href="https://www.instagram.com/max_foundation_ranchi"
+              target="_blank"
+              ><img src="images/instagram.png" alt="'instagram"
+            /></a>
+            <a href="https://wa.me/8210511638" target="_blank"
+              ><img src="images/whatsapp.png" alt="'whatsapp"
+            /></a>
+            <a
+              href="https://www.facebook.com/Maxfoundationranchi/"
+              target="_blank"
+              ><img src="images/facebook.png" alt="'facebook"
+            /></a>
+          </div>
+        </div>
+      </footer>
+      <div class="bottom-footer">
+        <div id="copyright">
+          <div>Copyright &COPY2023 maxfoundationranchi.com</div>
+          <div>
+            Design and Developed by
+            <a href="https://www.instagram.com/heyzammi/">Muzzammil</a>
+          </div>
+        </div>
+      </div>
+  
+      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="./gallery.js"></script>
+    </body>
+  </html>

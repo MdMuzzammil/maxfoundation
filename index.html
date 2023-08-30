@@ -42,16 +42,15 @@
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-            <!-- <ion-icon name="menu-outline" color="white" size="larger">Menu</ion-icon>
-                <ion-icon name="menu-outline" color="white" size="larger"></ion-icon> -->
+            
             </div>
-            <img class="mobile-logo" src="./images/logo.png" alt="" />
+            <img class="mobile-logo" style="@media (min-width: 769px){display:none}" src="./images/logo.png" alt="" />
       <ul class="nav-list">
-        <li class="list-item"><a href=""><ion-icon name="home-outline" color="#26116e"></ion-icon>Home</a></li>
-        <li class="list-item"><a href=""><ion-icon name="school-outline"></ion-icon>Courses</a></li>
-        <li class="list-item"><a href=""><ion-icon name="image-outline"></ion-icon>Gallery</a></li>
-        <li class="list-item"><a href=""><ion-icon name="people-outline"></ion-icon>About Us</a></li>
-        <li class="list-item"><a href=""><ion-icon name="chatbubbles-outline"></ion-icon>Contact Us</a></li>
+        <li class="list-item"><a href="./index.html"><ion-icon name="home-outline" color="#26116e"></ion-icon>Home</a></li>
+        <li class="list-item"><a href="#courses"><ion-icon name="school-outline"></ion-icon>Courses</a></li>
+        <li class="list-item"><a href="./gallery.html"><ion-icon name="image-outline"></ion-icon>Gallery</a></li>
+        <li class="list-item"><a href="#about-us"><ion-icon name="people-outline"></ion-icon>About Us</a></li>
+        <li class="list-item"><a href="#contact-us"><ion-icon name="chatbubbles-outline"></ion-icon>Contact Us</a></li>
       </ul>
     </nav>
 
@@ -88,7 +87,7 @@
     <!-- ==================================================
                 about us
 ================================================== -->
-<section class="about-us">
+<section id="about-us" class="about-us">
     <div>
         <h2>ABOUT US</h2>
         <p><img src="./images/student.webp" alt=""><b>Max Foundation Coaching Institute</b> in Ranchi is a pioneering educational institution that offers a transformative journey for students ranging from Class 6 to Class 12. With an unwavering commitment to fostering comprehensive growth, our institute stands as a cornerstone of academic brilliance and personal development. Our distinguished faculty, comprised of accomplished educators and mentors, employs an innovative approach to education, cultivating critical thinking, creativity, and a thirst for knowledge. Our meticulously designed curriculum extends beyond textbooks, empowering students with skills that transcend traditional learning. The institute's state-of-the-art infrastructure creates an immersive learning environment, while small class sizes enable individualized attention and mentorship. Beyond scholastics, we emphasize character development and holistic learning through a rich tapestry of extracurricular activities, enabling students to cultivate leadership, teamwork, and resilience. With a legacy of producing successful individuals, Max Foundation Coaching Institute is not just an educational institution; it's a launchpad for dreams, a platform for aspirations, and a nurturing community that believes in empowering minds to carve a path towards excellence and success in a dynamic world.</p>
@@ -206,7 +205,7 @@
     <!-- ==================================================
                 courses
 ================================================== -->
-<h2  style="text-align: center; margin:1rem; margin-top:3rem">Courses Offered</h2>
+<h2  id="courses" style="text-align: center; margin:1rem; margin-top:3rem">Courses Offered</h2>
 <section id="courses">
     <div class="course-container">
         <div class="course science-course active-course">
@@ -509,7 +508,7 @@
           <li class="quick-list-item"><a href="">Contact Us</a></li>
         </ul>
       </div>
-      <div class="connect-us">
+      <div id="contact-us" class="connect-us">
         <h3>Contact Us</h3>
         <a href="tel:+919334183225"> 9334183225<br /> </a>
         <a href="tel:+918210511638"> 8210511638 </a>

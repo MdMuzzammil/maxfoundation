@@ -23,3 +23,8 @@
         margin: 1rem .5rem;
     }
 }
+@media (min-width: 769px){
+    .mobile-logo{
+        display: none;
+    }
+}
