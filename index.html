@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./screen.css" />
     <link rel="stylesheet" href="./smallscreen.css" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./carousel.css" />
     <link rel="stylesheet" href="./xsmallscreen.css" />
     <style>
         @media screen and (max-width: 768px) {
@@ -60,18 +61,71 @@
         <ion-icon name="call"  style="color: #ffffff;"></ion-icon><a href="tel:+918210511638">Call Now</a>
     </div>
 
-    <section>
-      <img
-        style="
-          background-size: cover;
-          background-position: center;
-          width: 100%;
-          height: auto;
-          max-height: 80vh;
-        "
-        src="./images/bgimg.jpg"
-        alt=""
-      />
+    <section id="carousel-section">
+     
+      <div class="carousel">
+
+        <div class="slider">
+            <div class="slide"> <img
+                style="
+                  background-size: cover;
+                  background-position: center;
+                  width: 100%;
+                  height: auto;
+                  max-height: 80vh;
+                "
+                src="./images/bgimg.jpg"
+                alt=""
+              /></div>
+            <div class="slide"> <img
+                style="
+                  background-size: cover;
+                  background-position: center;
+                  width: 100%;
+                  height: auto;
+                  max-height: 80vh;
+                "
+                src="./images/bgimg.jpg"
+                alt=""
+              /></div>
+            <div class="slide"> <img
+                style="
+                  background-size: cover;
+                  background-position: center;
+                  width: 100%;
+                  height: auto;
+                  max-height: 80vh;
+                "
+                src="./images/bgimg.jpg"
+                alt=""
+              /></div>
+            <div class="slide"> <img
+                style="
+                  background-size: cover;
+                  background-position: center;
+                  width: 100%;
+                  height: auto;
+                  max-height: 80vh;
+                "
+                src="./images/bgimg.jpg"
+                alt=""
+              /></div>
+            <div class="slide"> <img
+                style="
+                  background-size: cover;
+                  background-position: center;
+                  width: 100%;
+                  height: auto;
+                  max-height: 80vh;
+                "
+                src="./images/bgimg.jpg"
+                alt=""
+              /></div>
+        </div>
+    </div>
+        <div class="btn prev" >&#10094</div>
+        <div class="btn next" >&#10095</div>
+
     </section>
 
     <!-- ==================================================
@@ -450,6 +504,7 @@
             <input type="text" placeholder="Full Name" required>
             <input type="Number" placeholder="Contact Number" required>
             <input type="email" placeholder="Email">
+            <input type="text" placeholder="School / College" required>
             <select name="class" id="" required> 
                 <option  value="cllas">Class</option>
                 <option value="VII">VII</option>
@@ -544,5 +599,6 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="./script.js"></script>
+<script src="./carousel.js"></script>
   </body>
 </html>

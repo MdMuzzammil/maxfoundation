@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./screen.css" />
     <link rel="stylesheet" href="./smallscreen.css" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./gallery.css" />
     <link rel="stylesheet" href="./xsmallscreen.css" />
     <style>
         @media screen and (max-width: 768px) {
@@ -60,10 +61,46 @@
         <ion-icon name="call"  style="color: #ffffff;"></ion-icon><a href="tel:+918210511638">Call Now</a>
     </div>
 
-    <section>
-     
+    <section class="gallery">
+
+        <div class="photo-container " id="">
+         <div onclick="openImg(8)" class="photo lazy" loading="lazy">
+            <img src="./images/google-play-icon.png" alt="">
+          </div>
+          <div onclick="openImg(7)" class="photo lazy" loading="lazy">
+            <img src="./images/bgimg.jpg" alt="">
+          </div>
+          <div onclick="openImg(6)" class="photo lazy" loading="lazy">
+            <img src="./images/bgimg.jpg" alt="">
+          </div>
+          <div onclick="openImg(5)" class="photo lazy" loading="lazy">
+            <img src="./images/bgimg.jpg" alt="">
+          </div>
+          <div onclick="openImg(4)" class="photo lazy" loading="lazy">
+            <img src="./images/bgimg.jpg" alt="">
+          </div>
+          <div onclick="openImg(3)" class="photo lazy" loading="lazy">
+            <img src="./images/bgimg.jpg" alt="">
+          </div>
+          <div onclick="openImg(2)" class="photo lazy" loading="lazy">
+            <img src="./images/bgimg.jpg" alt="">
+          </div>
+          <div onclick="openImg(1)" class="photo lazy" loading="lazy">
+            <img src="./images/bgimg.jpg" alt="">
+          </div>
+          <div onclick="openImg(0)" class="photo lazy" loading="lazy">
+            <img src="./images/bgimg.jpg" alt="">
+          </div>
+          <div onclick="closeAll()" class="close">&times</div>
+        </div>
+        <div class="button prev gallery-button">
+          <a onclick="prevImg()">&#10094;</a>
+      </div>
+      <div class="button next gallery-button">
+          <a onclick="nextImg()">&#10095;</a>
+      </div>
+
     </section>
-    
 
 
     <footer>

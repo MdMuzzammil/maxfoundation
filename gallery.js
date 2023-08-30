@@ -44,3 +44,91 @@ function toggleCall (){
 
     }
 }
+
+
+
+
+
+////////////////////////////////////////////////////////////////
+
+
+close = document.querySelector(".close")
+photos = document.querySelectorAll('.photo');
+galleryButton = document.querySelectorAll('gallery-button');
+nextBtn = document.querySelector(".next")
+prevBtn = document.querySelector(".prev")
+console.log(photos.length)
+function closeAll(){
+    nextBtn.classList.remove("active-button")
+    prevBtn.classList.remove("active-button")
+    photos.forEach((n)=>{
+        n.classList.remove("preview-active");
+        close.classList.remove("preview-active")
+
+
+    })
+}
+let imageIndex=0;
+function openImg(o){
+    o = photos.length-1-o;
+    showImg( imageIndex =o)
+}
+
+function showImg(imageIndex){
+    photos[imageIndex].classList.add("preview-active");
+    close.classList.add("preview-active")
+    prevBtn.classList.add("active-button")
+    nextBtn.classList.add("active-button")
+    // console.log("active button added")
+}
+function nextImg(){
+    imageIndex+=1;
+    if(imageIndex>=photos.length){
+        imageIndex=0;
+    }
+    closeAll();
+    showImg(imageIndex)
+}
+function prevImg(){
+    imageIndex-=1;
+    if(imageIndex<0){
+        imageIndex=photos.length-1;
+    }
+    closeAll();
+    showImg(imageIndex)
+}
+
+
+
+
+
+// lazy load 
+document.addEventListener("DOMContentLoaded", function() {
+    var lazyloadImages = document.querySelectorAll("img.lazy");    
+    var lazyloadThrottleTimeout;
+    
+    function lazyload () {
+      if(lazyloadThrottleTimeout) {
+        clearTimeout(lazyloadThrottleTimeout);
+      }    
+      
+      lazyloadThrottleTimeout = setTimeout(function() {
+          var scrollTop = window.pageYOffset;
+          lazyloadImages.forEach(function(img) {
+              if(img.offsetTop < (window.innerHeight + scrollTop)) {
+                img.src = img.dataset.src;
+                img.classList.remove('lazy');
+              }
+          });
+          if(lazyloadImages.length == 0) { 
+            document.removeEventListener("scroll", lazyload);
+            window.removeEventListener("resize", lazyload);
+            window.removeEventListener("orientationChange", lazyload);
+          }
+      }, 20);
+    }
+    
+    document.addEventListener("scroll", lazyload);
+    window.addEventListener("resize", lazyload);
+    window.addEventListener("orientationChange", lazyload);
+  });
