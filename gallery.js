@@ -3,16 +3,19 @@
 let hamburger = document.querySelector('.hamburger-g');
 let itemList = document.querySelectorAll('.list-item-g');
 let mobLogo = document.querySelector('.mobile-logo-g');
+let mobLogoP = document.querySelector('.mobile-logo-parent-g');
 
 hamburger.addEventListener('click', (element) => {
     if(itemList[1].style.display != 'none'){
         itemList.forEach((element) => {element.style.display = 'none';element.style.transition='1s'});
 
         mobLogo.style.display= 'block';
+        mobLogoP.style.display= 'block';
     }
     else{
         itemList.forEach((element) => {element.style.display = 'block'});
         mobLogo.style.display= 'none';
+        mobLogoP.style.display= 'none';
     }
 })
 
