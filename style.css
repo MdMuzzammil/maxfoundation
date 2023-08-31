@@ -677,3 +677,7 @@ footer>div{
         display: none;
     }
 }
+iframe{
+    width: 20rem;
+    height: 15rem;
+}

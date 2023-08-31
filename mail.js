@@ -41,7 +41,7 @@ const firebaseConfig = {
     document.querySelector('.alert').style.display='block';
     alert("Your Form Has Been Submitted")
     setTimeout(()=>{
-        document.querySelector('.alert').style.display='none';
+        // document.querySelector('.alert').style.display='none';
     }, 5000);
 }
 const getElementVal = (id) => {

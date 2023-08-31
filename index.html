@@ -552,12 +552,12 @@
     <div>
         <form id="enquiry-form" action="">
             <h2>Enquiry Form</h2>
-            <input type="text" placeholder="Full Name" required>
-            <input type="Number" placeholder="Contact Number" required>
-            <input type="email" placeholder="Email">
-            <input type="text" placeholder="School / College" required>
-            <select name="class" id="" required> 
-                <option  value="cllas">Class</option>
+            <input id="name" type="text" placeholder="Full Name" required>
+            <input id="contactNumber" type="Number" placeholder="Contact Number" required>
+            <input id="email" type="email" placeholder="Email">
+            <input id="college" type="text" placeholder="School / College" required>
+            <select  id="class" required> 
+                <option disabled selected value="class">Select your Class</option>
                 <option value="VII">VII</option>
                 <option value="VIII">VIII</option>
                 <option value="IX">IX</option>
@@ -565,12 +565,12 @@
                 <option value="XI">XI</option>
                 <option value="XII">XII</option>
             </select>
-            <select name="stream" id="">
-                <option value="course">Course</option>
+            <select id="stream" >
+                <option disabled selected value="course">Select your Stream</option>
                 <option value="science">Science</option>
                 <option value="commerce">Commerce</option>
             </select>
-            <button > Submit Now</button>
+            <button type="submit" id="submit-form"> Submit Now</button>
         </form>
     </div>
 </section>
