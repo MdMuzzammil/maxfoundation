@@ -57,6 +57,7 @@ body{
     color: white;
     padding: .3rem;
     background-color: #26116e;
+    text-align: center;
 }
 .top-header a{
     color: white;
@@ -681,4 +682,8 @@ footer>div{
 iframe{
     width: 20rem;
     height: 15rem;
+}
+.new-batch a{
+    text-decoration: none;
+    color: black;
 }
