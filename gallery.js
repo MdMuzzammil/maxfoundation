@@ -6,17 +6,19 @@ let mobLogo = document.querySelector('.mobile-logo-g');
 let mobLogoP = document.querySelector('.mobile-logo-parent-g');
 
 hamburger.addEventListener('click', (element) => {
-    if(itemList[1].style.display != 'none'){
-        itemList.forEach((element) => {element.style.display = 'none';element.style.transition='1s'});
-
-        mobLogo.style.display= 'block';
-        mobLogoP.style.display= 'block';
-    }
-    else{
+    if(itemList[1].style.display != 'block'){
         itemList.forEach((element) => {element.style.display = 'block'});
         mobLogo.style.display= 'none';
         mobLogoP.style.display= 'none';
     }
+    else{
+        itemList.forEach((element) => {element.style.display = 'none';element.style.transition='1s'});
+
+        mobLogo.style.display= 'block';
+        mobLogoP.style.display= 'block';
+        
+    }
+    // 
 })
 
 
