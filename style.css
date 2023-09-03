@@ -687,3 +687,12 @@ iframe{
     text-decoration: none;
     color: black;
 }
+.icon-dep{
+    height: 0 !important;
+}
+.render-icon{
+    position: absolute;
+    left: 0;
+    height: 0 !important;
+    transform: translateX(-100rem);
+}
