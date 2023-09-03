@@ -110,7 +110,7 @@ workObserver = new IntersectionObserver((entries, observer)=>{
     if(!entry.isIntersecting)return;
         
 const counterNumber = document.querySelectorAll(".counter-number");
-const speed=20;
+const speed=17;
 counterNumber.forEach(element => {
     updatenumber();
     function updatenumber (){
