@@ -689,10 +689,11 @@ iframe{
 }
 .icon-dep{
     height: 0 !important;
+    overflow: hidden;
 }
 .render-icon{
     position: absolute;
     left: 0;
-    height: 0 !important;
+    /* height: 0 !important; */
     transform: translateX(-100rem);
 }
