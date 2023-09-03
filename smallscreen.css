@@ -75,7 +75,12 @@
     .banner-text{
         font-size: 2.5rem !important;
     }
-  
+    .app-ss img {
+        width: 19rem;
+        margin: 0 auto;
+        height: 32rem;
+        transform: translateX(-1rem);
+    }
 }
 @media (min-width: 769px){
     .mobile-logo{
